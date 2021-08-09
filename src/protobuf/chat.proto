@@ -1,0 +1,21 @@
+// use protobuf version 3
+syntax = "proto3";
+
+package chat;
+option go_package = "chat";
+
+// FromClient holds the client model
+message FromClient {
+    string name = 1;
+    string body = 2;
+}
+
+// FromClient holds the server model
+message FromServer {
+    string name = 1;
+    string body = 2;
+}
+
+service Services {
+    rpc ChatService(stream FromClient) returns (stream FromServer){};
+}
