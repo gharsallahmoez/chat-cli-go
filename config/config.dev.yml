@@ -1,0 +1,17 @@
+# Documentation in config.template.yml file
+server:
+  type: grpc
+  host: localhost
+  port: 3000
+  deadline: 10
+
+database:
+  chat:
+    type: local
+    dbname: local
+    tablename: chat
+    host: localhost
+
+parameters:
+  env: dev
+  timeout: 10

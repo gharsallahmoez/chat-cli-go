@@ -1,0 +1,17 @@
+# Documentation in config.template.yml file
+server:
+  type: grpc
+  host: your_public_ip
+  port: 3000
+  deadline: 10
+
+database:
+  chat:
+    type: mysql
+    dbname: chat
+    tablename: chat
+    host: db_ip
+
+parameters:
+  env: prod
+  timeout: 10

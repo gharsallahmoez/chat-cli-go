@@ -1,0 +1,9 @@
+server:
+  type:                 # communication to be used for now only grpc is supported
+  host:                 # grpc host
+  port:                 # grpc server port
+  deadline:             # deadline time in ms
+
+parameters:
+  env:                  # Environment : dev | prod
+  timeout:              # context timout in seconds
